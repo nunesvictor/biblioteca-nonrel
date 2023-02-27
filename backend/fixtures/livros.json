@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "63e19f37211fc9baf5a7f1bd"
+  },
+  "nome": "Dom Casmurro",
+  "autores": [
+    {
+      "_id": {
+        "$oid": "63e1a2a0211fc9baf5a7f1d9"
+      },
+      "nome": "ASSIS. Machado de"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63e1a1f6211fc9baf5a7f1d7"
+  },
+  "nome": "Gramática",
+  "autores": [
+    {
+      "_id": {
+        "$oid": "63e1a2dc211fc9baf5a7f1de"
+      },
+      "nome": "FARACO, Carlos Emílio"
+    },
+    {
+      "_id": {
+        "$oid": "63e1a2f8211fc9baf5a7f1e2"
+      },
+      "nome": "MOURA, Francisco Marto"
+    }
+  ]
+}]

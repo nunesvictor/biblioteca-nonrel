@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "63e1a149211fc9baf5a7f1cc"
+  },
+  "livro": {
+    "_id": {
+      "$oid": "63e19f37211fc9baf5a7f1bd"
+    },
+    "nome": "Dom Casmurro",
+    "autores": [
+      {
+        "_id": {
+          "$oid": "63e1a2a0211fc9baf5a7f1d9"
+        },
+        "nome": "ASSIS. Machado de"
+      }
+    ]
+  },
+  "usuario": {
+    "_id": {
+      "$oid": "63e1a03e211fc9baf5a7f1c6"
+    },
+    "nome": "Fulano de Tal"
+  },
+  "emprestado_em": {
+    "$date": {
+      "$numberLong": "1644195405000"
+    }
+  },
+  "devolvido_em": {
+    "$date": {
+      "$numberLong": "1644333358000"
+    }
+  },
+  "avaliacao": 4
+},{
+  "_id": {
+    "$oid": "63e53f4fa8164a1823fc5961"
+  },
+  "livro": {
+    "_id": {
+      "$oid": "63e1a1f6211fc9baf5a7f1d7"
+    },
+    "nome": "Gramática",
+    "autores": [
+      {
+        "_id": {
+          "$oid": "63e1a2dc211fc9baf5a7f1de"
+        },
+        "nome": "FARACO, Carlos Emílio"
+      },
+      {
+        "_id": {
+          "$oid": "63e1a2f8211fc9baf5a7f1e2"
+        },
+        "nome": "MOURA, Francisco Marto"
+      }
+    ]
+  },
+  "usuario": {
+    "_id": {
+      "$oid": "63e1a0a9211fc9baf5a7f1c7"
+    },
+    "nome": "Beltrano da Silva"
+  },
+  "emprestado_em": {
+    "$date": {
+      "$numberLong": "1644432502000"
+    }
+  },
+  "devolvido_em": null,
+  "avaliacao": 0
+}]
