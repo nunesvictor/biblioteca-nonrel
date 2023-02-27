@@ -3,6 +3,8 @@ import { useState } from "react";
 import TabPanel from "./components/TabPanel";
 import AuthorList from "./pages/AuthorList";
 import BookList from "./pages/BookList";
+import BookLoanList from "./pages/BookLoanList";
+import UserList from "./pages/UserList";
 
 const a11yProps = (index: number) => ({
   id: `simple-tab-${index}`,
@@ -27,6 +29,7 @@ const App = () => {
           <Tab label="Livros" {...a11yProps(0)} />
           <Tab label="Autores" {...a11yProps(1)} />
           <Tab label="Empréstimos" {...a11yProps(2)} />
+          <Tab label="Usuários" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -36,7 +39,10 @@ const App = () => {
         <AuthorList />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Empréstimos
+        <BookLoanList />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <UserList />
       </TabPanel>
     </Container>
   );

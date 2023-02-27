@@ -8,18 +8,18 @@ import {
   Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
-import AuthorListItem from "../components/AuthorListItem";
-import Autor from "../interfaces/Autor";
+import BookLoanListItem from "../components/BookLoanListItem";
+import Emprestimo from "../interfaces/Emprestimo";
 
-const AuthorList = () => {
-  const [autores, setAutores] = useState([] as Autor[]);
+const BookLoanList = () => {
+  const [emprestimos, setEmprestimos] = useState([] as Emprestimo[]);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_BACKEND_API}/autores`)
+    fetch(`${process.env.REACT_APP_BACKEND_API}/emprestimos`)
       .then((res) => {
         res
           .json()
-          .then((data) => setAutores(data))
+          .then((data) => setEmprestimos(data))
           .catch((err) => console.error(err));
       })
       .catch((err) => console.error(err));
@@ -27,12 +27,12 @@ const AuthorList = () => {
 
   return (
     <>
-      <Paper className="AuthorList" sx={{ mb: 2, px: 2, py: 3 }}>
+      <Paper className="BookLoanList" sx={{ mb: 2, px: 2, py: 3 }}>
         {/* <SearchField /> */}
-        <Typography>Autores</Typography>
+        <Typography>Empréstimos</Typography>
         <List>
-          {autores.map((autor) => (
-            <AuthorListItem key={autor._id} autor={autor} />
+          {emprestimos.map((emprestimo) => (
+            <BookLoanListItem key={emprestimo._id} emprestimo={emprestimo} />
           ))}
         </List>
       </Paper>
@@ -42,7 +42,7 @@ const AuthorList = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography component="pre" sx={{ fontSize: ".825rem" }}>
-            {JSON.stringify(autores, null, 4)}
+            {JSON.stringify(emprestimos, null, 4)}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -50,4 +50,4 @@ const AuthorList = () => {
   );
 };
 
-export default AuthorList;
+export default BookLoanList;

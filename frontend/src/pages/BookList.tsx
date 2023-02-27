@@ -29,7 +29,7 @@ const BookList = () => {
     <>
       <Paper className="BookList" sx={{ mb: 2, px: 2, py: 3 }}>
         {/* <SearchField /> */}
-        <Typography>Lista de Livros</Typography>
+        <Typography>Livros</Typography>
         <List>
           {livros.map((livro) => (
             <BookListItem key={livro._id} livro={livro} />
